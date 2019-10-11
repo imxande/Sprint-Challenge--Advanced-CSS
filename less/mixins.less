@@ -1,1 +1,20 @@
 // Mixins Here
+.color(){
+    background-color: WhiteSmoke;
+}
+
+.nice_border{
+	border-radius: 20px;
+}
+
+// parametric mixin
+.custom-btn(@bg-color: #23293B, @width: 100px){
+    background-color: @bg-color;
+    width: @width;
+    &:hover{
+        background-color: @porcelain;
+        transition-duration: 1s;
+        color: @btn-bg-color;
+        border:1px solid black;
+    }
+}
